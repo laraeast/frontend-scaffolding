@@ -11,7 +11,7 @@ mix.pug = require('laravel-mix-pug');
  | The font files and background images will copy to public path.
  |
  */
-mix.setPublicPath('./dist');
+mix.setPublicPath('./public');
 
 /*
  |--------------------------------------------------------------------------
@@ -33,11 +33,11 @@ mix.setResourceRoot('../');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.js('src/js/app.js', 'dist/js')
-  .sass('src/sass/app.scss', 'dist/css')
-  .copyDirectory('src/images', 'dist/images');
+mix.js('src/js/app.js', 'public/js')
+  .sass('src/sass/app.scss', 'public/css')
+  .copyDirectory('src/images', 'public/images');
 
-mix.pug('src/pug/pages/*.pug', '../../../pages', {
+mix.pug('src/pug/pages/*.pug', '../../../public', {
   pug: {
     pretty: true
   }
