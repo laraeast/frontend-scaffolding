@@ -37,7 +37,8 @@ mix.setResourceRoot('../');
  */
 mix.js('src/js/app.js', 'public/js')
   .sass('src/sass/app.scss', 'public/css')
-  .copyDirectory('src/images', 'public/images');
+  .copyDirectory('src/images', 'public/images')
+  .extract(['jquery', 'bootstrap']);
 
 mix.pug('src/pug/pages/*.pug', '../../../public', {
   pug: {
