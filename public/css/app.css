@@ -1,5 +1,18 @@
 @font-face{font-family:icomoon;src:url(../fonts/vendor/icomoon/icomoon.eot?b48a6e5d6d0a0693c9236ce5500e50ad);src:url(../fonts/vendor/icomoon/icomoon.eot?b48a6e5d6d0a0693c9236ce5500e50ad#iefix) format("embedded-opentype"),url(../fonts/vendor/icomoon/icomoon.ttf?6a837d3eaef514e9b032910d20f55b94) format("truetype"),url(../fonts/vendor/icomoon/icomoon.woff?db57a7430ed1cd1f82cca50b8ec03e42) format("woff"),url(../fonts/vendor/icomoon/icomoon.svg?8e61b486cfdea12e4ed952a4c5bdf154#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-analytics:before{content:"\E900"}.icon-cup:before{content:"\E901"}.icon-employee-2:before{content:"\E902"}.icon-money:before{content:"\E903"}.icon-smartphone-1:before{content:"\E904"}.icon-united-kingdom:before{content:"\E905"}.icon-balloons:before{content:"\E906"}.icon-data-protection:before{content:"\E907"}.icon-delivery-complete:before{content:"\E908"}.icon-dialog:before{content:"\E909"}.icon-smartphone:before{content:"\E90A"}.icon-travel:before{content:"\E90B"}.icon-employee-1:before{content:"\E90C"}.icon-gear:before{content:"\E90D"}.icon-happiness:before{content:"\E90E"}.icon-medical-history:before{content:"\E90F"}.icon-mortarboard2:before{content:"\E910"}.icon-software:before{content:"\E911"}.icon-desk:before{content:"\E912"}.icon-employee:before{content:"\E913"}.icon-software-1:before{content:"\E914"}.icon-web-development:before{content:"\E915"}.icon-workplace:before{content:"\E916"}.icon-salary:before{content:"\E917"}.icon-settings:before{content:"\E918"}.icon-team:before{content:"\E919"}.icon-first-aid-kit:before{content:"\E91A"}.icon-headphones:before{content:"\E91B"}.icon-interview:before{content:"\E91C"}.icon-coding:before{content:"\E91D"}.icon-seo:before{content:"\E91E"}.icon-prototype:before{content:"\E91F"}.icon-accounting:before{content:"\E920"}.icon-credit-card:before{content:"\E921"}.icon-factory:before{content:"\E922"}.icon-industrial-robot:before{content:"\E923"}.icon-medical:before{content:"\E924"}.icon-mortarboard:before{content:"\E925"}.icon-mortgage:before{content:"\E926"}.icon-online-shopping:before{content:"\E927"}.icon-rocket:before{content:"\E928"}.icon-skyline:before{content:"\E929"}.icon-technology:before{content:"\E92A"}.icon-rss:before{content:"\E92B"}.icon-upwork:before{content:"\E92C"}.icon-freelance:before{content:"\E92D"}.icon-linkdn:before{content:"\E92E"}.icon-googleplus:before{content:"\E92F"}.icon-facebook:before{content:"\E930"}.icon-twitter:before{content:"\E931"}.icon-quotes-left:before{content:"\E977"}.icon-quotes-right:before{content:"\E978"}
 
+/*!rtl:begin:options:
+{
+  "autoRename": true,
+  "stringMap":[
+      {
+      "name"    : "prev-next-left-right",
+      "search"  : ["prev", "next", "left", "right"],
+      "replace" : ["next", "prev", "right", "left"]
+      }
+  ]
+}
+*/
+
 /*!
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -19,6 +32,8 @@
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */@font-face{font-family:Font Awesome\ 5 Brands;font-style:normal;font-weight:400;font-display:auto;src:url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?a7b95dbdd87e0c809570affaf366a434);src:url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?a7b95dbdd87e0c809570affaf366a434) format("embedded-opentype"),url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?5e2f92123d241cabecf0b289b9b08d4a) format("woff2"),url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?2ef8ba3410dcc71578a880e7064acd7a) format("woff"),url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?98b6db59be947f563350d2284fc9ea36) format("truetype"),url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?5bf145531213545e03ff41cd27df7d2b) format("svg")}.fab{font-family:Font Awesome\ 5 Brands}
+
+/*!rtl:end:options*/
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
