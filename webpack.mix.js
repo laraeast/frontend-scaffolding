@@ -1,6 +1,8 @@
 const mix = require('laravel-mix'),
   WebpackRTLPlugin = require('webpack-rtl-plugin');
 
+require('laravel-mix-purgecss');
+
 mix.pug = require('laravel-mix-pug');
 
 /*
@@ -41,6 +43,11 @@ mix.pug('src/pug/pages/*.pug', '../../../public', {
   pug: {
     pretty: true
   }
+});
+
+// Remove unused css
+mix.purgeCss({
+  folders: ['./public'],
 });
 
 // Handle rtl
