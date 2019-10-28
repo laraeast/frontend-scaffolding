@@ -5,7 +5,14 @@ header.header
         a.navbar-brand(href="./index.html")
             i.fab.fa-bootstrap.fa-lg.mr-2
             | Front End Scaffolding
-        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        button.navbar-toggler(
+            type="button",
+            data-toggle="collapse",
+            data-target="#navbarSupportedContent",
+            aria-controls="navbarSupportedContent",
+            aria-expanded="false",
+            aria-label="Toggle navigation"
+        )
             span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
             ul.navbar-nav.mr-auto
@@ -19,12 +26,10 @@ header.header
                         i.fas.fa-question-circle.mr-2
                         | About
                 li.nav-item
-                    a.nav-link(href="javascript:direction('rtl');")
-                        i.fas.fa-question-circle.mr-2
+                    a.nav-link.btn-rtl(href="javascript:direction('rtl');")
                         | RTL Version
                 li.nav-item
-                    a.nav-link(href="javascript:direction('ltr');")
-                        i.fas.fa-question-circle.mr-2
+                    a.nav-link.btn-ltr(href="javascript:direction('ltr');")
                         | LTR Version
 
     // /Navbar
