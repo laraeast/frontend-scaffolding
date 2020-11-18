@@ -16,6 +16,11 @@ $ npm i
 $ npm run watch
 ```
 
+> Finally open the project in browser with auto reloading using the following command:
+```bash
+npm start
+```
+
 
 > Note : If Your website is `RTL` direction you should write the code with `LTR` direction and it will work without any problem in `/dist/css/app.rtl.css` file.  
 
