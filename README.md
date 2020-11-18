@@ -16,7 +16,7 @@ $ npm i
 $ npm run watch
 ```
 
-> Finally open the project in browser with auto reloading using the following command:
+> Finally open the project in browser with auto reloading using the following command in another terminal tab:
 ```bash
 npm start
 ```
