@@ -5,7 +5,8 @@ module.exports = {
   purge: {
     layers: ['utilities'],
     content: [
-      "./public/*.html"
+      "./public/*.html",
+      "./src/js/components/*.vue"
     ],
   },
   theme: {
