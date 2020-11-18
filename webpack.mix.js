@@ -1,9 +1,6 @@
-const mix = require('laravel-mix'),
-  WebpackRTLPlugin = require('webpack-rtl-plugin');
+const mix = require('laravel-mix');
+const WebpackRTLPlugin = require('webpack-rtl-plugin');
 
-require('laravel-mix-purgecss');
-
-mix.pug = require('laravel-mix-pug');
 
 /*
  |--------------------------------------------------------------------------
@@ -17,16 +14,6 @@ mix.setPublicPath('./public');
 
 /*
  |--------------------------------------------------------------------------
- | Resource Root
- |--------------------------------------------------------------------------
- |
- | The prefix that will added before font files and backgrounds links in compiled css files.
- |
- */
-mix.setResourceRoot('../');
-
-/*
- |--------------------------------------------------------------------------
  | Mix Asset Management
  |--------------------------------------------------------------------------
  |
@@ -36,27 +23,18 @@ mix.setResourceRoot('../');
  |
  */
 mix.js('src/js/app.js', 'public/js')
-  .sass('src/sass/app.scss', 'public/css')
-  .copyDirectory('src/images', 'public/images')
-  .extract(['jquery', 'bootstrap']);
+  .postCss('src/css/app.css', 'public/css', [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ])
 
-mix.pug('src/pug/pages/*.pug', '../../../public', {
-  pug: {
-    pretty: true
-  }
-});
-
-// Remove unused css
-mix.purgeCss({
-  folders: ['./public'],
-});
-
-// Handle rtl
-mix.webpackConfig({
-  plugins: [
-    new WebpackRTLPlugin({
-      diffOnly: false,
-      minify: true,
-    }),
-  ],
-});
+if (mix.inProduction()) {
+  mix.webpackConfig({
+    plugins: [
+      new WebpackRTLPlugin({
+        diffOnly: false,
+        minify: true,
+      }),
+    ],
+  });
+}
