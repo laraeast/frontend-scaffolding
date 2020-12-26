@@ -1,17 +1,24 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  future: {
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    layers: ['utilities'],
-    content: [
-      "./public/*.html",
-      "./src/js/components/*.vue"
-    ],
-  },
+  purge: [
+    "./public/*.html",
+    "./src/js/components/*.vue"
+  ],
+
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
-  variants: {},
-  plugins: [],
-}
+
+  variants: {
+    extend: {
+      opacity: ['disabled'],
+    },
+  },
+
+  plugins: [require('@tailwindcss/forms')],
+};
