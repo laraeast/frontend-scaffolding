@@ -23,6 +23,9 @@ mix.setPublicPath('./public');
  |
  */
 mix.js('src/js/app.js', 'public/js')
+  .vue({
+    version: 2
+  })
   .postCss('src/css/app.css', 'public/css', [
     require('tailwindcss'),
     require('autoprefixer'),
