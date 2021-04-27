@@ -14,9 +14,11 @@
     "start": "live-server ./public"
   },
   "devDependencies": {
+    "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0-beta3",
     "laravel-mix": "^6.0.6",
     "live-server": "^1.2.1",
+    "postcss": "^8.2.13",
     "resolve-url-loader": "^3.1.0",
     "sass": "^1.32.0",
     "sass-loader": "^10.1.0",
